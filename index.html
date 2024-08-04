@@ -1,14 +1,281 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../src/output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer For You</title>
+    <link href="/src/output.css" rel="stylesheet">
+    <style>
+        /* Custom styles to handle the transition */
+        .transition-transform {
+            transition: transform 0.3s ease-in-out;
+        }
+
+
+        /* Animation for Logo */
+
+        .scrolling-logos {
+            display: flex;
+            overflow: hidden;
+            white-space: nowrap;
+            
+        }
+        .scrolling-logos .logo {
+            flex: 0 0 auto;
+            height: 60px; /* Adjust height as needed */
+            margin: 0 5px; /* Add some spacing between logos */
+        }
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        .scroll-container {
+            display: flex;
+            width: 200%; /* Double the width for smooth looping */
+            animation: scroll 20s linear infinite;
+        }
+    </style>
 </head>
-<body class="bg-slate-400">
-  <h1 class="text-3xl h-screen w-screen flex items-center justify-center text-white ">
-   <b> Work in Progress <br>  </b> 
-     
-  </h1>
+<body class="bg-slate-100 text-slate-600">
+    <div class="flex flex-col md:flex-row h-screen">
+        <!-- Sidebar -->
+        <div id="sidebar" class="fixed md:relative top-0 left-0 w-64 bg-white p-4 h-full transform -translate-x-full md:translate-x-0 transition-transform">
+            <div class="mb-6">
+
+                <img src ="src/image-removebg-preview (1).png" alt="logo" class="w-30  rounded-full mx-auto">
+                <!-- <h1 class="text-3xl font-bold">FREECASH</h1> -->
+            </div>
+            <nav>
+                <ul>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center p-2 text-sm font-semibold rounded hover:bg-orange-600 hover:text-white">
+                            <span>All</span>
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center p-2 text-sm font-semibold rounded hover:bg-orange-600 hover:text-white">
+                            <span>Offers</span>
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center p-2 text-sm font-semibold rounded hover:bg-orange-600 hover:text-white">
+                            <span>Hiring</span>
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center p-2 text-sm font-semibold rounded hover:bg-orange-600 hover:text-white">
+                            <span>Student Offer</span>
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center p-2 text-sm font-semibold rounded  hover:bg-orange-600 hover:text-white">
+                            <span> Coupon Code  </span>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+         
+        <div class="flex-1   overflow-y-auto text-slate-600">
+<!-- Animation -->
+<div class="py-1 bg-transparent z-0">
+  <div class="scrolling-logos">
+      <div class="scroll-container">
+          <!-- Logos go here -->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="logo bg-white">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Old_Nike_logo.jpg" alt="Nike" class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" alt="Samsung" class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Sony_logo.svg" alt="Sony" class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg" alt="HP" class="logo">
+         
+         
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Uber_logo_2018.svg" alt="Uber" class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg" alt="Airbnb" class="logo">
+          
+          <!-- Repeat logos for continuous effect -->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Old_Nike_logo.jpg" alt="Nike" class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" alt="Samsung" class="logo">
+          
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Sony_logo.svg" alt="Sony" class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg" alt="HP" class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Oracle_wordmark.svg/640px-Oracle_wordmark.svg.png" alt="Oracle" class="logo">
+         
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Uber_logo_2018.svg" alt="Uber" class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg" alt="Airbnb" class="logo">
+      </div>
+  </div>
+</div>
+
+<!-- end Animation -->
+            <!-- Button to toggle sidebar -->
+            <div class="flex justify-between items-center mb-4 md:hidden">
+                <h1 class="text-2xl font-bold">Dashboard</h1>
+                <button id="toggleSidebar" class="bg-gray-50 p-2 rounded">Toggle Sidebar</button>
+            </div>
+            <!-- <header class="flex flex-col md:flex-row items-center justify-between mb-6 text-white">
+                <div class="flex space-x-4 mb-4 md:mb-0">
+                    <button class="bg-gray-300 p-2 rounded">PayPal Cashout</button>
+                    <button class="bg-gray-700 p-2 rounded">Stake Cashout</button>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <span class="font-bold">$1.55</span>
+                    <span>Tarikul</span>
+                    <button class="bg-gray-700 p-2 rounded">Notifications</button>
+                </div>
+            </header> -->
+            <section class="p-4">
+                
+                <h2 class="text-2xl font-bold mb-4 text-gray-600 absolute">Featured Offers</h2>  <a href="#">  <h4 class=" font-bold  text-gray-600 absolute right-5  float-end">View all >></h4>
+                </a>
+                <br>
+                <br>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 mb-6">
+                    <div class="bg-white p-4 rounded shadow-md shadow-slate-300  hover:bg-orange-600 hover:text-white hover:opacity-80 ">
+                     
+                      <img src="src/1_3ZOGafwkK_QnMROReYz4xw-removebg-preview.png" alt="">
+                     
+                        <h3 class="font-semibold">GitHub Student Developer Pack</h3>
+                        <p>
+                       
+                            Get the best developer tools for free.
+
+                        </p>
+                    </div>
+                    <!-- <div class="bg-white p-4 rounded shadow-md shadow-slate-300  hover:bg-orange-600 hover:text-white hover:opacity-80 ">
+                        <h3 class="font-semibold">Title</h3>
+                        <p>$0.35</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-md shadow-slate-300  hover:bg-orange-600 hover:text-white hover:opacity-80 ">
+                        <h3 class="font-semibold">Title</h3>
+                        <p>$0.44</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-md shadow-slate-300  hover:bg-orange-600 hover:text-white hover:opacity-80 ">
+                        <h3 class="font-semibold">Title</h3>
+                        <p>$39.62</p>
+                    </div> -->
+                </div>
+
+              
+                
+            </section>
+
+            <!-- Hiring  -->
+
+            <section class="p-4">
+                
+                <h2 class="text-2xl font-bold mb-4 text-gray-600 absolute">Featured Job Opportunity</h2>  <a href="#">  <h4 class=" font-bold  text-gray-600 absolute right-5  float-end">View all >></h4>
+                </a>
+                <br>
+                <br>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 mb-6">
+                    <div class="bg-white p-4 rounded shadow-md shadow-slate-300  hover:bg-orange-600 hover:text-white hover:opacity-80 ">
+                     
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="">
+                     
+                        <h3 class="font-semibold">google Is Hiring for various postition</h3>
+                        <p> </p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-md shadow-slate-300  hover:bg-orange-600 hover:text-white hover:opacity-80 ">
+                       <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="">
+                       
+                        <h3 class="font-semibold py-2">PayPal is hiring for Software Engineer</h3>
+                        <p class="float-end">date 04/08/2024</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-md shadow-slate-300  hover:bg-orange-600 hover:text-white hover:opacity-80 ">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Cricbuzz_Logo.png" alt="Amazon">
+                        
+                        <h3 class="font-semibold py-2 "> 
+                            Cricbuzz is hiring Full Stack Developer
+                        </h3>
+                        <p></p>
+                    </div>
+
+                    <div class="bg-white p-4 rounded shadow-md shadow-slate-300  hover:bg-orange-600 hover:text-white hover:opacity-80 ">
+                       
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Exxon_Mobil_Logo.svg" alt="ExxonMobil">
+
+                        <h3 class="font-semibold py-2">ExxonMobil is hiring for Software Developer</h3>
+                        <p></p>
+                    </div>
+
+
+
+                    <div class="bg-white p-4 rounded shadow-md shadow-slate-300  hover:bg-orange-600 hover:text-white hover:opacity-80 ">
+                       
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+
+                        <h3 class="font-semibold py-2">Amazon is hiring for Data Analyst</h3>
+                        <p></p>
+                    </div>
+
+
+                  <div class="bg-white p-4 rounded shadow-md shadow-slate-300  hover:bg-orange-600 hover:text-white hover:opacity-80 ">
+                       
+                        <img src="https://upload.wikimedia.org/wikipedia/en/d/d6/Smarsh_logo.png" alt="Smarsh">
+
+                        <h3 class="font-semibold py-2">Smarsh is hiring for Machine Learning Engineer</h3>
+                        <p></p>
+                    </div>
+
+
+                </div>
+
+              
+                
+            </section>
+            <!-- <section class="p-4">
+                <h2 class="text-2xl font-bold mb-4 ">My Offers</h2>
+                <div class="bg-white p-4 rounded mb-6 shadow-md shadow-slate-300  hover:bg-orange-600 hover:text-white hover:opacity-80 ">
+                    <h3 class="font-semibold">Title</h3>
+                    <p>$0.06</p>
+                </div>
+            </section>
+            <section class="p-4">
+                <h2 class="text-2xl font-bold mb-4">Offer Partners</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                    <div class="bg-white p-4 rounded shadow-md shadow-slate-300  hover:bg-orange-600 hover:text-white hover:opacity-80 ">
+                        <h3 class="font-semibold">AdGate</h3>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-md shadow-slate-300  hover:bg-orange-600 hover:text-white hover:opacity-80 ">
+                        <h3 class="font-semibold">Torox</h3>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-md shadow-slate-300  hover:bg-orange-600 hover:text-white hover:opacity-80 ">
+                        <h3 class="font-semibold">TimeWall</h3>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-md shadow-slate-300  hover:bg-orange-600 hover:text-white hover:opacity-80 ">
+                        <h3 class="font-semibold">AdGem</h3>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-md shadow-slate-300  hover:bg-orange-600 hover:text-white hover:opacity-80 ">
+                        <h3 class="font-semibold">Ayet Studios</h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div> -->
+
+    <script>
+        document.getElementById('toggleSidebar').addEventListener('click', function() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('-translate-x-full');
+        });
+    </script>
 </body>
 </html>
